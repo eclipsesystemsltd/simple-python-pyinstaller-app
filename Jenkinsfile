@@ -7,7 +7,8 @@ pipeline {
             agent any
 
             steps {
-                echo 'Building Assets...'
+                echo 'Building Assets...123'
+		sh 'python -m py_compile sources/add2vals.py sources/calc.py' 
             }
         }
         stage('Test') {
