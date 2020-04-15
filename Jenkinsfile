@@ -16,7 +16,7 @@ pipeline {
 
             steps {
                 echo 'Transferring Assets...'
-		sh 'cp -r ~/.jenkins/workspace/simple-python-pyinstaller-app/sources/ build'
+		sh 'cp -r ~/.jenkins/workspace/simple-python-pyinstaller-app/sources/ ~/git/simple-python-pyinstaller-app/build'
             }
         }
         stage('Test') {
