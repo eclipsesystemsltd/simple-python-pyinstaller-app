@@ -4,7 +4,7 @@ pipeline {
 
     stages {
         stage('Build Assets') {
-            agent master
+            agent any
 
             steps {
                 echo 'Building Assets...'
@@ -12,7 +12,7 @@ pipeline {
             }
         }
         stage('Post Build') {
-            agent master
+            agent any
 
             steps {
                 echo 'Transferring Assets...'
@@ -20,7 +20,7 @@ pipeline {
             }
         }
         stage('Test') {
-            agent master
+            agent any
 
             steps {
                 echo 'Testing stuff...'
